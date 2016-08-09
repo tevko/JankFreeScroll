@@ -43,6 +43,6 @@ QUnit.test( "should be cancelable", function( assert ) {
 
   window.scrollTo( 0, 1000 );
   window.scrollTo( 0, 0 );
-
+  document.body.removeChild(document.querySelector('.container'));
   assert.equal( document.body.style.backgroundColor, '', 'bg should not be set' );
 });
