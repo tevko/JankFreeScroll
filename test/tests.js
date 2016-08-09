@@ -5,20 +5,20 @@
   Verify that JankFreeScroll fires on scroll up & down, and is cancelable
 */
 window.addEventListener('load', function() {
-
-	QUnit.module('JankFreeScroll', {
+	window.s = jankfreescroll({
+		onScrollDown() {
+			document.body.style.backgroundColor = 'white';
+		},
+		onScrollUp() {
+			document.body.style.backgroundColor = 'orange';
+		}
+	});
+	QUnit.module('jankfreescroll', {
 	    beforeEach: function () {
-	      window.s = jankfreescroll({
-				onScrollDown() {
-					document.body.style.backgroundColor = 'white';
-				},
-				onScrollUp() {
-					document.body.style.backgroundColor = 'orange';
-				}
-			});
+	      
 	    },
 	    afterEach: function () {
-	      window.cancelAnimationFrame(window.s.frameID);
+	      
 	    }
 	});
 
