@@ -17,7 +17,7 @@ QUnit.module('JankFreeScroll', {
 		});
     },
     afterEach: function () {
-      window.cancelAnimationFrame(window.s);
+      window.cancelAnimationFrame(window.s.frameID);
     }
 });
 
@@ -39,7 +39,7 @@ QUnit.test( "change bg on scrollup", function( assert ) {
 QUnit.test( "should be cancelable", function( assert ) {
 
   
-  window.cancelAnimationFrame(window.s);
+  window.cancelAnimationFrame(window.s.frameID);
 
   window.scrollTo( 0, 1000 );
   window.scrollTo( 0, 0 );
