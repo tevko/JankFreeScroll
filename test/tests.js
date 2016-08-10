@@ -23,7 +23,7 @@ window.addEventListener('load', function() {
 	});
 
 	QUnit.test( "changes bg on scrolldown", function( assert ) {
-	  
+	  document.body.style.backgroundColor='black';
 	  window.scrollTo( 0, 10000 );
 	  assert.equal( document.body.style.backgroundColor, 'white', 'bg should be white' );
 	  
