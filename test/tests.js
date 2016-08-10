@@ -28,6 +28,7 @@ window.addEventListener('load', function() {
 	  window.scrollTo( 0, 0 );
 	  window.scrollTo( 0, 10000 );
 	  window.cancelAnimationFrame(window.s.frameID);
+	  window.scrollTo( 0, 0 );
 	  assert.equal( document.body.style.backgroundColor, 'white', 'bg should be white' );
 	  
 	});
