@@ -39,7 +39,7 @@ window.addEventListener('load', function() {
 
 	QUnit.test( "should be cancelable", function( assert ) {
 
-	  
+	  document.body.style = '';
 	  window.cancelAnimationFrame(window.s.frameID);
 
 	  window.scrollTo( 0, 1000 );
