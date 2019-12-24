@@ -4,7 +4,7 @@ JankFreeScroll uses [Request Animation Frame](https://developer.mozilla.org/en-U
 
 **431 bytes Minified + Gzipped**
 
-##How to Use
+## How to Use
 
 ```html
 <script src="jankfreescroll.js"></script>
@@ -24,6 +24,6 @@ var s = jankfreescroll({
 window.cancelAnimationFrame(s.frameID);
 ```
 
-##Try it out
+## Try it out
 http://codepen.io/tevko/pen/dXzNrw
 
